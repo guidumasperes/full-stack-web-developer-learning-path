@@ -6,9 +6,9 @@
 <!-- HTML syntax -->
 <!-- <p>, this is an opening tag; </p> this is a closing tag -->
 
-<!-- <p> contenxt </p>
-	 ^               ^
-	 |----element----|
+<!-- <p>contenxt</p>
+	  ^           ^
+	  |--element--|
 	 The closing and opening tags plus the content is called 'element' 
 -->
 
@@ -20,17 +20,17 @@
 
 <!-- Headlines -->
 <!-- There are six types -->
-<h1> First </h1>
-<h2> Second </h2>
-<h3> Third </h3>
-<h4> Fourth </h4>
-<h5> Fifth </h5>
-<h6> Sixth </h6>
+<h1>First</h1>
+<h2>Second</h2>
+<h3>Third</h3>
+<h4>Fourth</h4>
+<h5>Fifth</h5>
+<h6>Sixth</h6>
 
 <!-- Bold and Italics -->
-<p> This is an <em> emphasized </em> word and this is an <i> italic </i> word </p>
+<p>This is an <em>emphasized</em> word and this is an <i>italic</i> word</p>
 <!-- Although they look the same the 'em' tag and 'i' tag are different when listening to content -->
-<p> This is a <strong> strong </strong> word and this is a <b> bold </b> word </p>
+<p>This is a <strong>strong</strong> word and this is a <b>bold</b> word</p>
 <!-- Bold word is not to emphasize, but to call a certain attention -->
 
 <!-- Lists -->
@@ -59,13 +59,57 @@
 
 <!-- Quotes -->
 <!-- Inline quote -->
-<p lang="fr"> <q> this is a french quote </q> </p>
-<p> this is an english quote </p>
+<p lang="fr"><q>this is a french quote</q></p>
+<p>this is an english quote</p>
 <!-- Block quote -->
 <blockquote>
-	<p> HTML is fun. </p>
-	<cite> Random person </cite>
+	<p>HTML is fun.</p>
+	<cite>Random person</cite>
 </blockquote> 
 
 <!-- Inline elements = wrapping around phrases of content that are inline with some other content -->
 <!-- Block-Level elements = these elements each start a new block -->
+
+<!-- Code, pre and br -->
+<p>Declaring a variable in python: <code>number = 5</code></p>
+<!-- HTML entitites => &lt; = "<" and &gt; = ">" -->
+<!-- Line break -->
+<p>Hello, <br> this is <br> a <br> line <br> break <br></p>
+<!-- pre => consider indentation and spaces -->
+<pre>
+	<code>
+		for i in range(0,10):
+			print(f'{i} - I love Python!')
+	</code>
+</pre>
+
+<!-- Subscripts, superscripts, and small text -->
+<p>H<sub>2</sub>O</p>
+<p>5<sup>2</sup></p>
+<small>© Copyright</small>
+<!-- <small> tag is used to convey something that has very little prominence -->
+
+<!-- Attributes -->
+<!-- Global Attributes: attributes that can be applied to any HTML element -->
+<!-- 'class' attribute: allows us to target all elements with that class in our CSS or JavaScript
+	 'id' attribute: allows us to target a unique element with that id in our CSS or JavaScript
+     'lang' attribute: tells the browser what language the content is
+ -->
+<!-- ARIA Roles: HTML attributes that provide accessible information about that specific element -->
+
+<!-- Links -->
+<!-- The Anchor Element -->
+<a href="html_basics.html">Link</a>
+<a href="https://google.com.br">Other link</a> <!-- If you type 'www' it won't work, need to be https -->
+
+<!-- Absolute url: http://somewebsite.com/about -->
+<!-- Relative url: /about -->
+
+<!-- Navigation -->
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">About</a>
+	</ul>
+</nav>
