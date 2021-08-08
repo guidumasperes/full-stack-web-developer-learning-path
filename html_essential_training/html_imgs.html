@@ -1,0 +1,33 @@
+<!-- Images -->
+<!-- 4 main attributes: src, alt, width, height -->
+<!-- src: tells browser which image file to load 
+	 alt: description of the image, for blind people for example
+	 width: defines width of image
+	 height: defines height of image
+-->
+<img src="https://images.squarespace-cdn.com/content/v1/5b45f95a55b02c82eea6bf88/1531320934238-DU04ZRQ9R173LQJ1HQDO/20429685_1755583834469279_8308383402628579009_n.jpg" alt="pretty kitty" width="480" height="360">
+
+<!-- Image formats -->
+<!-- GIF: "Animated" image. 
+	 SVG: Logos, icons and other kings of ilustrations, instead of pixels, contains instructions for a drawing.
+     JPG: Great format for compressing photographs.
+     PNG: Good solution when you have a photograph and you need part of the photo to be transparent.
+-->
+
+<!-- Responsive images -->
+<!-- "srcset" attribute allows browser to choose from a set of images, the most appropriate
+	  srcset = "img-960px 2x, img-1440px 3x, img-1920px 4x" 
+-->
+<!-- "sizes" attribute: tells the browser when to use the file, list which size image to use at which media query 
+	  sizes = "(max-width: 480px) 240px, (max-width: 960px) 480px, (max-width: 1440px) 960px"
+-->
+<picture>
+	<source media="(min-width:600px)"
+			srcset="https://images.squarespace-cdn.com/content/v1/5b45f95a55b02c82eea6bf88/1531320934238-DU04ZRQ9R173LQJ1HQDO/20429685_1755583834469279_8308383402628579009_n.jpg">
+	<img src="https://images.squarespace-cdn.com/content/v1/5b45f95a55b02c82eea6bf88/1531320934238-DU04ZRQ9R173LQJ1HQDO/20429685_1755583834469279_8308383402628579009_n.jpg" alt="pretty kitty" width="480" height="360">
+</picture>
+<!-- figure and figcaption -->
+<figure>
+	<img src="https://images.squarespace-cdn.com/content/v1/5b45f95a55b02c82eea6bf88/1531320934238-DU04ZRQ9R173LQJ1HQDO/20429685_1755583834469279_8308383402628579009_n.jpg" alt="pretty kitty" width="480" height="360">
+	<figcaption>A pretty kitty.</figcaption>
+</figure>
