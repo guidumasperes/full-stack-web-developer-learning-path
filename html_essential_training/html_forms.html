@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML test</title>
+		<meta name="description" content="A HTML form test page">
+	</head>
+	<body>
+		<form action="media.html" method="get">
+			<label>Name:
+				<input name="name" type="text"> <!-- input element goes inside label element to match the name with the input -->
+			<!-- Instead we could use the "for" attribute with label "element" and "id" attribute with label "input" and same value as for 
+				<label for="name">Name:</label>
+				<input name="name" id="name" type="text">
+			-->
+			</label>
+			<label>Email:
+				<input name="email" type="email" placeholder="me@example.com" required>
+			</label>
+			<button type="submit">Sign up</button>
+		</form>
+		<form action="media.html" method="get">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password">
+			<label for="search">Search</label>
+			<input type="search" name="search" id="search">
+			<label for="phone">Phone</label>
+			<input type="tel" name="phone" id="phone">
+			<label for="textarea">Text Area</label>
+			<textarea name="textarea" id="textarea" cols="30" rows="15"></textarea>
+			<label for="date">Date</label>
+			<input type="date" name="date" id="date">
+			<label for="file">File</label>
+			<input type="file" name="file" id="file" accept="image/*" multiple="">
+			<button type="submit">Sign up</button>
+			<!-- There is a lot of types of inputs like checkboxes, select lists, radio buttons, etc that you can put into your form-->
+		</form>
+	</body>
+</html>
