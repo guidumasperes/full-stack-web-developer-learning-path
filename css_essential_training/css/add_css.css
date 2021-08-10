@@ -25,6 +25,35 @@
    padding: 10px 5px;     | Shorthand
 */
 
+/* CSS Values and Units
+	There are a lot of types of values:
+	1) Numeric values without units => unitless values.
+	2) Numeric values with units.
+	3) Absolute length values => fixed units, always the same size.
+	4) Relative length.
+	Functions can be used as values for properties. 
+*/
+
+/* Color and property values
+	Hexadecimal
+	¨¨¨¨¨¨¨¨¨¨¨
+	Case insentive => #FFFFFF == #ffffff
+	colors => #ff(red)ff(green)ff(blue)
+	Shorthand => #f00;
+	Longhand => #ff000000;
+
+	rgb()
+	¨¨¨¨¨
+	Can be with numbers or percentage values
+	rgb(0, 255, 140) or rgb(0%, 50%, 100%)
+
+	rgba()
+	¨¨¨¨¨¨
+	Alpha to change opacity
+	rgba(0, 255, 50, 0.5) => 50% opacity
+
+*/
+
 /*
 	Good guide for coding HTML and CSS: https://codeguide.co
 */

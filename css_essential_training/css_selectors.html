@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Css selectors type</title>
+		<link rel="stylesheet" href="css/css_selectors.css">
+	</head>
+	<body>
+		<p>I'm being selected by type</p>
+		<p class="fancy">I'm being selected by class</p>
+		<p id="styled">I'm being selected by id</p>
+		<!-- ID's and In-Page Linking can be used for CSS or In-Page linking(jump to a section on html page) -->
+		<a href="#jump">Click to jump to jump</a>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<section id="jump">JUMPED!!</section>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+	</body>
+</html>
+
+<!-- Nested Elements and the DOM
+	   body (Parent element)
+	          |   
+	__________|___________  
+    |   |   |      |     |
+    p   a  br  section  ul (siblings) (descendents/children of body)
+                       __|__
+                      |  |  |
+                      li li li (children/descendents of ul and descendents of body) 
+-->

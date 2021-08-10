@@ -1,0 +1,67 @@
+/* Type and universal selectors */
+
+/*
+	Type selector
+	¨¨¨¨¨¨¨¨¨¨¨¨¨
+	They match HTML elements by using element name.
+*/
+p {
+	color: red;
+}
+
+/*
+	Class selector
+	¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+	They match elements with a specific class value.
+*/
+.fancy {
+	color: green;
+}
+
+/*
+	ID selector
+	¨¨¨¨¨¨¨¨¨¨¨
+	They match elements with a specific id value.
+*/
+#styled {
+	color: blue;
+}
+
+/* Naming conventions
+   For names instead of spaces use hyphen or underscore.
+   Correct:  class = "class-name" or class = "class_name"
+   Incorrect: class = "class name"
+   Use meaningful names
+*/
+
+/* Descendent selectors
+   Selects only paragraphs contained within a section
+*/
+/* Selects every section inside body  */
+body section {
+	color: pink;
+}
+
+/* Grouping selectors
+   Applies to a specified group of elements
+*/
+/* Selects all ul and a*/
+ul, a {
+	color: darkolivegreen;
+}
+
+/*Combining selectors*/
+/* Applies to "p" element with "fancy" class  */
+p.fancy {
+	font-size: 30px;
+}
+
+/* Inheritance and specificity
+   Inheritance: CSS styles can be inherited from the ancestor to descendant elements. Not all properties are inheritable.
+   Specificity: determines overrides on elements.
+*/
+
+/* The cascade and importance 
+   Style declarations cascade are read from top to bottom, this means that the last declaration loaded will take precedence over others.
+   The !important keyword overrides source order and specificity
+*/
