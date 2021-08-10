@@ -1,3 +1,30 @@
 .external {
 	color: blue;
 }
+
+/* CSS Syntax and terminology
+	.external => is the selector, selectors are used to choose which html elements we'll apply the style
+	 _______________
+	|.external {    |
+	|color: blue;   | This is the declaration block
+	|}              |
+	|_______________|
+
+    ----->property
+	color: blue; => is a declaration(style rules), written using a property(color) and value(blue) pair
+           ---->value
+*/
+
+/* Shorthand and longhand properties
+
+   padding-top: 10px;     |
+   padding-right: 5px;    | Longhand 
+   padding-bottom: 10px;  |
+   padding-left: 5px;     |
+
+   padding: 10px 5px;     | Shorthand
+*/
+
+/*
+	Good guide for coding HTML and CSS: https://codeguide.co
+*/
