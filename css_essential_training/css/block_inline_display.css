@@ -1,0 +1,91 @@
+/* Inline, block and display
+	Inline elements
+	¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+    ________  ________
+	|inline|  |inline|
+    |______|  |______|
+
+	Takes up the same space as their content. 
+	Elements are displayed in a line, from the left.
+	Elements will only wrap when items cannot fit.
+
+	Block elements
+	¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+	_________________________
+	|          block        |
+	|_______________________|
+	_________________________
+    |          block        |
+    |_______________________|
+
+	Same height as content, same width as container.
+	Always start on a new line.
+	If the element stretches all the way across the container, it's a block level element.
+
+	The display property: used to change the default behavior of inline and block-level elements.
+*/
+.normal-block {
+	background: red;
+	height: 50px;
+	width: 300px;
+}
+.normal-inline {
+	background: lightblue;
+	height: 50px;
+	width: 300px;
+}
+.block-to-inline {
+	background: red;
+	height: 50px;
+	width: 300px;
+	display: inline;
+}
+.inline-to-block {
+	background: lightblue;
+	height: 50px;
+	width: 300px;
+	display: block;
+}
+.block-to-inline-block {
+	background: red;
+	height: 50px;
+	width: 300px;
+	display: inline-block;
+}
+.inline-to-inline-block {
+	background: lightblue;
+	height: 50px;
+	width: 300px;
+	display: inline-block;
+}
+.box-model-view {
+	width: 400px;
+	padding:  30px;
+	border: 20px;
+	background: lightpink;
+}
+.padding-margin-border-test p {
+	background: lightgreen;
+	border: 1px solid black;
+	padding: 20px;
+}
+.padding-margin-border-test span {
+	background: yellow;
+	border: 1px solid black;
+	padding: 20px;
+	display: inline-block;
+	margin: 20px auto; /* 20px top and bottom; auto left and right */
+}
+.first {
+	margin-bottom: 0px;
+}
+.second {
+	margin-top: 0px;
+}
+/* Box model properties
+   width: defines width of the content
+   height: defines height of the content
+   padding: adds or removes space within the element(inside element, but around content box)
+   margin: adds or removes space around the element
+   border: added between padding and margin
+*/
