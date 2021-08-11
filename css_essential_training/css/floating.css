@@ -1,0 +1,36 @@
+.big-box {
+	border: 2px solid black;
+	margin: 10px;
+}
+.blue-box {
+	border: 2px solid black;
+	background: lightblue;
+	float: left;
+	margin: 10px;
+	padding: 13px;
+}
+.clear {
+	clear: both; /* With clear property you can unfloat an element around other */
+}
+.fix-with-overflow {
+	overflow: hidden;
+}
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Layouts and the box model
+   The box model fix
+   ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+   Change box-sizing from content-box to border-box, this way we include the padding and boder space within the dimensions set with width
+   and height properties
+   To use this fix add:
+    html {
+		box-sizing: border-box;
+	}
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+*/

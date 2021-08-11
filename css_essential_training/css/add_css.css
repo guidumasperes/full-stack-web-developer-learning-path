@@ -15,7 +15,7 @@
           ---->value
 */
 
-/* Shorthand and longhand properties
+/* Shorthand and longhand properties (extends to other properties)
 
    padding-top: 10px;     |
    padding-right: 5px;    | Longhand 
@@ -69,7 +69,6 @@
 
 /* Changing font-family:
 	¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-
 	Declaring a font stack(fonts that will be used in your project):
 	body {
 		font-family: Helvetica, Arial, sans-serif; 
@@ -78,7 +77,6 @@
 
 	Changing font-weight:
 	¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-	
 	font-weight: 100; is the lightest or thinnest
 	.
 	.
@@ -87,13 +85,35 @@
 
 	Web fonts with @font-face:
 	¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-	
 	Import fonts from the web:
 	@font-face {
 		font-family: "My font";
 		src: url("my-font.woff"); #relative path
 		src: url("http://example.com/fonts/my-font.woff"); #absolute path
 	}
+
+	The font-size:
+	¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+	px: pixels, it's an absolute value, great for accuracy
+	em: relative unit, relative to parent
+	rem:  relative unit, only relative to the root element
+
+	Text decoration:
+	¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+	It's the underline
+	text-decoration: underline red solid;  | shorthand
+
+	text-decoration-line: underline;       |
+	text-decoration-color: red;            | londhand
+	text-drcoration-syle: solid;           |
+
+	Text align:
+	¨¨¨¨¨¨¨¨¨¨¨
+	Can be used to align content within a block element
+
+	Line height:
+	¨¨¨¨¨¨¨¨¨¨¨¨
+	Sets the height of the space between two lines of text
 */
 
 /*
