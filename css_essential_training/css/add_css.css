@@ -10,9 +10,9 @@
 	|}              |
 	|_______________|
 
-    ----->property
+   ----->property
 	color: blue; => is a declaration(style rules), written using a property(color) and value(blue) pair
-           ---->value
+          ---->value
 */
 
 /* Shorthand and longhand properties
@@ -52,6 +52,48 @@
 	Alpha to change opacity
 	rgba(0, 255, 50, 0.5) => 50% opacity
 
+*/
+
+/* Typography for the web
+	Typography: arranging type for readability and to engage and communicate with the reader
+	Typeface 
+	¨¨¨¨¨¨¨¨
+	A set of fonts designed with common characteristics, composed of glyphs
+	There are five categories of of typefaces: script, decorative, monospace, serif, sans-serif
+	Script => headlines or small decorative text details
+	Decorative => ornamental
+	Monospace => displaying code
+	Serif => traditional and formal
+	Sans-serif => contemporary and modern
+*/
+
+/* Changing font-family:
+	¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+
+	Declaring a font stack(fonts that will be used in your project):
+	body {
+		font-family: Helvetica, Arial, sans-serif; 
+	}
+	Declare in preference order
+
+	Changing font-weight:
+	¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+	
+	font-weight: 100; is the lightest or thinnest
+	.
+	.
+	.
+	font-weight: 900; is the darkest or thickest
+
+	Web fonts with @font-face:
+	¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+	
+	Import fonts from the web:
+	@font-face {
+		font-family: "My font";
+		src: url("my-font.woff"); #relative path
+		src: url("http://example.com/fonts/my-font.woff"); #absolute path
+	}
 */
 
 /*

@@ -1,9 +1,9 @@
 /* Inline, block and display
 	Inline elements
 	¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-    ________  ________
+   ________  ________
 	|inline|  |inline|
-    |______|  |______|
+   |______|  |______|
 
 	Takes up the same space as their content. 
 	Elements are displayed in a line, from the left.
@@ -15,8 +15,8 @@
 	|          block        |
 	|_______________________|
 	_________________________
-    |          block        |
-    |_______________________|
+   |          block        |
+   |_______________________|
 
 	Same height as content, same width as container.
 	Always start on a new line.
@@ -69,12 +69,15 @@
 	border: 1px solid black;
 	padding: 20px;
 }
+.content-wrap {
+	width: 200px;
+	margin: 0 auto; /* 0px top and bottom; auto left and right */
+}
 .padding-margin-border-test span {
 	background: yellow;
 	border: 1px solid black;
 	padding: 20px;
 	display: inline-block;
-	margin: 20px auto; /* 20px top and bottom; auto left and right */
 }
 .first {
 	margin-bottom: 0px;
@@ -83,6 +86,8 @@
 	margin-top: 0px;
 }
 /* Box model properties
+	In CSS we see all things as boxes.
+
    width: defines width of the content
    height: defines height of the content
    padding: adds or removes space within the element(inside element, but around content box)
