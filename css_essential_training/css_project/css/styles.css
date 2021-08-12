@@ -43,6 +43,7 @@ h1, h2 {
 header {
 	background: #2F3061;
 	color: #F7FFF7;
+	text-align: center;
 }
 
 /* Projects 
@@ -64,6 +65,18 @@ header {
 .projects .btn:hover {
 	background: rgba(47, 48, 97, 80%);
 }
+.project-item {
+	overflow: hidden;
+	border-bottom: 1px dashed #343434;
+	padding: 25px 0;
+}
+.project-item img {
+	float: left;
+	margin-right: 20px;
+}
+.project-item h3 {
+	margin-top: 0;
+}
 
 /* Work Experience 
 -----------------------------*/
@@ -79,6 +92,17 @@ header {
 footer {
 	background: #343434;
 	color: #F7FFF7;
+	text-align: center;
+}
+.contact-list li {
+	padding: 15px;
+	display: inline-block;
+}
+.contact-list {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
 }
 
 /* Many people like to reset CSS to remove default styles from elements, like margins and paddings 

@@ -34,3 +34,20 @@
 		box-sizing: inherit;
 	}
 */
+
+/* Position
+   Used to change the document flow, same thing as float.
+   5 types:
+   static => not positioned
+   relative => relative to current position
+   absolute => relative to containing element
+   fixed => relative to the viewport 
+   sticky => relative to containing element and viewport
+   Can be used with: top, right, bottom and left properties
+
+   Z-index
+   ¨¨¨¨¨¨¨
+   Defines the element order in z axis
+   Higher value => higher position in the stack
+   Lower value => lower position in the stack
+*/

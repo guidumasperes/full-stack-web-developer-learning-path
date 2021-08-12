@@ -1,0 +1,48 @@
+/* Flexbox
+   ¨¨¨¨¨¨¨
+   Items are aligned on a single axis, it's one dimension => column or lines
+
+   Grid
+   ¨¨¨¨
+   Two-dimensional, can arrange items into rows and columns at the same time
+*/
+
+/* Flexbox introduction
+   
+   Terminology:
+   ¨¨¨¨¨¨¨¨¨¨¨¨
+   flex-container: refers to the parent element
+   flex-items: refers to the child elements, are laid out along the main axis, arranged in rows by default
+   flex-direction: determines the direction of the main axis. There are 4 values: row, row-reverse, column and column reverse
+   flex-wrap: determines how flex-items wrap => nowrap: flex-items don't wrap ; wrap: flex-items that not fit wrap to the next line
+
+   shorthand for flex-direction and flex-wrap => flex-flow: column wrap;
+   longhand for flex-direction and flex-wrap => flex-direction: column;
+                                                flex-wrap: wrap;
+
+   Flex properties:
+   ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+   flex-basis: initial size of flex-items
+   flex-grow: how items expand if there is an extra space in the container
+   flex-shrink: how items shrink if there isn't enough space in the container
+   You can use shorthand => flex: grow shrink basis;
+
+   Align items in a flex container:
+   ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+   justify-cotent: align items on the main axis
+   align-items: align items on the cross axis
+*/
+.flex-container {
+	border: 3px solid black;
+	padding: 5px;
+	display: flex;
+}
+.inline-flex-container {
+	border: 3px solid black;
+	padding: 5px;
+	display: inline-flex; /*Flex container displaying inline*/	
+}
+.flex-item {
+	border: 1px solid black;
+	background: lightblue;
+}
