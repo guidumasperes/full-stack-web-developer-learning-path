@@ -1,0 +1,59 @@
+/* Relational selectors
+   
+   Descendant combinators
+   ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+   Creates matching patters base on the relationship between nested selectors(most used selector until now)
+
+*/
+.parent-descendent-combinator .child-descendent-combinator {
+	color: indianred;
+}
+
+/*
+   Child combinator
+   ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+   Only matches to direct child element
+*/
+.parent-child-combinator > .child-child-combinator {
+	color: darkred;
+}
+
+/*
+   Sibling combinators
+   ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+   Match sibling elements
+
+   Adjacent sibling combinator (+): matches only to the selector on the right
+*/
+p.sibling-sibling-combinator + div.sibling-sibling-combinator {
+	color: orangered;
+}
+
+/* General sibling combinator(~): matches any sibling element*/
+p.sibling-sibling-combinator ~ div.sibling-sibling-combinator {
+	font-style: italic;
+}
+
+/* Pseudo class selectors */
+a {
+	color: darkolivegreen;
+}
+a:hover {
+	text-decoration: none;
+}
+
+/* first-child and last-child */
+p.child-first-last-selector:first-child { /* Note that are several ways to select elements in the DOM */
+	color: red;
+}
+p.child-first-last-selector:last-child {
+	color: rebeccapurple;
+}
+
+/* first-of-type and last-of-type */
+p.child-first-last-type-selector:last-of-type {
+	color: violet;
+}
+h4.child-first-last-type-selector:first-of-type {
+	color: greenyellow;
+}

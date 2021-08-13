@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Advanced Selectors</title>
+		<link rel="stylesheet" href="css/advanced_selectors.css">
+	</head>
+	<body>
+		<div class="parent-descendent-combinator">
+			<div class="child-descendent-combinator">I'm a child(descendent combinator).</div>
+		</div>
+		<div class="parent-child-combinator">
+			<div class="child-child-combinator">I'am a child(child combinator).</div>
+		</div>
+		<div class="parent-sibling-combinator">
+			<p class="sibling-sibling-combinator">(a) I'm a sibling(sibling combinator)</p>
+			<div class="sibling-sibling-combinator">(b) I'm a sibling(sibling combinator)</div>
+			<div class="sibling-sibling-combinator">(c) I'm a sibling(sibling combinator)</div>
+		</div>
+		<a href="#">Hover test</a>
+		<div class="parent-first-last-selector">
+			<p class="child-first-last-selector">I'm a sibling</p>
+			<p class="child-first-last-selector">I'm a sibling</p>
+			<p class="child-first-last-selector">I'm a sibling</p>
+		</div>
+		<br>
+		<div class="parent-first-last-type-selector">
+			<p class="child-first-last-type-selector">I'm a <code>&lt;p&gt;</code> sibling</p>
+			<p class="child-first-last-type-selector">I'm a <code>&lt;p&gt;</code> sibling</p>
+			<h4 class="child-first-last-type-selector">I'm a <code>&lt;h4&gt;</code> sibling</h4>
+			<p class="child-first-last-type-selector">I'm a <code>&lt;p&gt;</code> sibling</p>
+			<h4 class="child-first-last-type-selector">I'm a <code>&lt;h4&gt;</code> sibling</h4>
+		</div>
+	</body>
+</html>
