@@ -7,7 +7,7 @@
    Two-dimensional, can arrange items into rows and columns at the same time
 */
 
-/* Flexbox introduction
+/* Flexbox
    
    Terminology:
    ¨¨¨¨¨¨¨¨¨¨¨¨
@@ -40,9 +40,63 @@
 .inline-flex-container {
 	border: 3px solid black;
 	padding: 5px;
-	display: inline-flex; /*Flex container displaying inline*/	
+	display: inline-flex; /* Flex container displaying inline */	
 }
 .flex-item {
 	border: 1px solid black;
 	background: lightblue;
+}
+
+/* Grid
+   
+   Terminology:
+   ¨¨¨¨¨¨¨¨¨¨¨¨
+   grid-container: the parent element
+   grid-items: the child elements within the grid container
+   fr: represents a fraction of the available space in the grid container
+   grid-auto-rows: set rows of implicit grid
+   grid-auto-columns: set columns of implicit grid
+
+   Grid lines and tracks:
+   ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+   To define a specific number of gridlines and tracks use grid-template-columns and grid-template-rows, this will create an explicit grid
+   
+   Grid properties:
+   ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+   grid-column: grid-column-start and grid-colmun-end
+   grid-row: grid-row-start and grid-row-end
+*/
+.grid-container {
+	border: 3px solid black;
+	padding: 5px;
+	display: grid;
+}
+.inline-grid-container {
+	border: 3px solid black;
+	padding: 5px;
+	display: inline-grid; /* Grid container displaying inline */	
+}
+.grid-item {
+	border: 1px solid black;
+	background: lightblue;
+}
+.explicit-grid-container {
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 100px; 
+}
+.fraction-explicit-grid-container {
+	grid-template-columns: 1fr 1fr 1fr; /* Can be "repeat(3, 1fr);" */
+}
+.dif-fraction-explicit-grid-container {
+	grid-template-columns: 1fr 2fr 1fr;
+}
+.gap-fraction-explicit-grid-container {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px 20px; /* rows | columns */
+}
+.implicit-grid-container {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-auto-columns: repeat(3, 1fr);
+	grid-auto-rows: repeat(2, 1fr);
 }
