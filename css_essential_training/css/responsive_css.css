@@ -43,4 +43,17 @@
    You can add in a separate file and then import via @import to the main CSS
    You can add at the bottom of the main CSS file.
    Finally, you can also add via HTML with the <link> element
+
+   How to translate the media query statement ?
+   ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+
+   @media (max-width: 800px) { ... } -> When the screen is 800px or smaller, add this style  | But when the resulution is exactly 800px ?
+   @media (min-width: 800px) { ... } -> When the screen is 800px or bigger, add this style   | Adjust pixels values!
+
+	Two schools
+	¨¨¨¨¨¨¨¨¨¨¨
+	Desktop first -> design thinking on big screens and then use media queries to small devices
+	Mobile first -> design thinking on small screens and then use media queries to big devices
+
+	A good way for testing responsiveness is browserstack.com 
 */
