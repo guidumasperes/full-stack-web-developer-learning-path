@@ -33,7 +33,8 @@ h1, h2 {
 	margin: 0; /* Removes extra space causing top to be bigger than bottom */
 }
 .content-wrap {
-	width: 800px;
+	max-width: 800px;
+	width: 85%;
 	margin: 0 auto;
 	padding: 60px 0; /* 60px to top and bottom and 0 px to left and right */
 }
@@ -105,6 +106,15 @@ header {
 
 /* Education 
 -----------------------------*/
+.education {
+	background-image: url(../img/joanna-kosinska-unsplash.jpg);
+	background-size: cover;
+	background-position: top right;
+	padding-bottom: 100px;
+}
+.education p {
+	width: 60%;
+}
 
 /* Social Media 
 -----------------------------*/
