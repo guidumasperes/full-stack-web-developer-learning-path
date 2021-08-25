@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Intro to js</title>
+		<script src="intro_pattern.js" defer></script> <!-- This is the pattern of loading js now -->
+		<script src= "to_import.js" type="module"></script> <!-- You need the "module" keyword in order to function import and export -->
+		<script src= "to_export.js" type="module"></script>
+	</head>
+	<body>
+	</body>
+	<script src="intro.js"></script>
+	<script>
+		var p = document.createElement("p");
+		p.innerHTML = "This is a paragraph (internal)";
+		document.body.appendChild(p);
+	</script>
+</html>
