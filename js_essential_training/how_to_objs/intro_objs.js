@@ -19,4 +19,11 @@ const human = {
 
 // To variable names use camelCase
 
-console.log("Geralt object: ", human);
+console.log("Geralt object:", human);
+
+// Two ways of accessing object properties
+// Dot notation
+console.log("The age value:", human.age);
+
+// Square brackets notation
+console.log("The occupation value:", human["occupation"]);
