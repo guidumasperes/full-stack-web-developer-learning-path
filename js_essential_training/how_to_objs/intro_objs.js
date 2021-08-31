@@ -27,3 +27,5 @@ console.log("The age value:", human.age);
 
 // Square brackets notation
 console.log("The occupation value:", human["occupation"]);
+
+//Worth noting that the entire html document is a object, this is why important to learn js objs
