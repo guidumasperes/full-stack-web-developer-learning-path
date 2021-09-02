@@ -1,0 +1,9 @@
+.func-decl-par {
+    color: red;
+}
+.func-expr-par {
+    color: green;
+}
+.arrow-func-par {
+    color: blue;
+}

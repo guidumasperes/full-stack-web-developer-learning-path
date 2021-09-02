@@ -1,4 +1,4 @@
-//Easy way
+/* Easy way */
 
 //Create nav element
 const navElem = document.createElement("nav")
@@ -18,7 +18,7 @@ navElem.innerHTML = content
 //Add nav bar to html
 document.body.appendChild(navElem)
 
-//Hard way
+/* Hard way */
 
 //Create nav element
 const navElemHard = document.createElement("nav")
