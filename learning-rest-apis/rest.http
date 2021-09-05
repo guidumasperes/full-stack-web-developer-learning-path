@@ -1,0 +1,95 @@
+#Testing http requests in https://reqres.in
+#To run a request you can use ctrl + alt + r or click on send request
+
+//GET https://reqres.in/api/users
+
+#A REST request has two parts:
+#A method GET, POST, etc...
+#And a URI http://somewebsite.com () the resource we want to interact with
+
+#If we run the OPTIONS request, it will give us access to the collections
+#of all posts within the wordpress site
+
+//OPTIONS http://restful.dev/wp-json/wp/v2/posts
+
+#Some concepts:
+#A resource can be any piece of data, html, image, etc...
+#A representation is the data representation of a resource and not the
+#resource itself(it's a copy of it!)
+
+#If you want to retrieve the data of a resource you send a GET request
+#Responses:
+#200 success
+#404 not found
+
+#If you want to send the data from the client to the server you can use:
+#POST, PUT and PATCH
+
+#POST send a new piece of data
+#201 created
+#401 unauthorized
+#409 conflict
+#404 not found
+
+#PUT update data at an existing resource by replacing all of its contents
+#200 ok
+#401 unauthorized
+#404 not found
+#405 method not allowed
+
+#PATCH modify an existing resource by replacing all of its contents
+#200 ok
+#401 unauthorized
+#404 not found
+#405 method not allowed
+
+#DELETE delete the specified resource
+#200 ok
+#401 unauthorized
+#404 not found
+
+#HEAD returns just the head section
+#200 ok
+#404 not found
+
+//HEAD https://reqres.in/api/users
+
+#Groups of status code:
+#1xx information
+#2xx success
+#3xx redirection
+#4xx client error
+#5xx server error
+
+#Testing more reqres api
+
+//GET https://reqres.in/api/users/4
+
+#POST https://reqres.in/api/register
+#Content-Type: application/json
+#
+#{
+#    "email": "eve.holt@reqres.in",
+#    "password": "pistol"
+#}
+
+
+#POST https://reqres.in/api/users
+#Content-Type: application/json
+#
+#{
+#    "name": "morpheus",
+#    "job": "leader"
+#}
+
+#PUT https://reqres.in/api/users/2
+#Content-Type: application/json
+#
+#{
+#    "name": "morpheus",
+#    "job": "zion resident"
+#}
+#
+#PATCH does the same thing as above
+
+#DELETE https://reqres.in/api/users/2
